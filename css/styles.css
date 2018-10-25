@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+}
+h2{
+	margin: 0;
+}
+.container{
+	width: 80%;
+	margin:0 auto;
+	background-color: yellow;
+}
+.flex-container{	
+	flex-flow: row wrap;
+	display: flex;
+	height: 800px;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+	/*align-content: flex-end;*/
+	/*justify-content: space-evenly;*/
+	/*flex-direction:reverse;*/
+
+}
+.box{
+	width: 500px;
+	/*flex-basis: 400px;*/
+	height: 200px;
+
+}
+.box:hover{
+	-webkit-transition: background 3s ease-in-out;
+	-moz-transition: background 3s ease-in-out;
+	-ms-transition: background 3s ease-in-out;
+	-o-transition: background 3s ease-in-out;
+	background-color: orange;
+	transition: background-color 3s ease-in-out;
+}
+.box:first-child{
+	background-color: crimson;
+	/*flex-grow: 2;*/
+	/*order: 1*/
+	flex-shrink: 4
+	
+}
+.box:nth-child(2){
+	/*flex-grow: 1;*/
+	background-color: coral;
+	/*order: 3*/
+	flex-shrink: 2
+
+}
+.box:nth-child(3){
+	/*flex-grow: 3;*/
+	background-color: cyan;
+	/*order: 2*/
+	flex-shrink: 3
+
+}
+.box:nth-child(4){
+	/*flex-grow: 3;*/
+	background-color: seagreen;
+	/*order: 2*/
+	flex-shrink: 3
+
+}
+.box:nth-child(5){
+	/*flex-grow: 3;*/
+	background-color: maroon;
+	/*order: 2*/
+	flex-shrink: 3
+
+}
+
+.div{
+	-webkit-transition: background 2s ease-in-out;
+	-moz-transition: background 2s ease-in-out;
+	-ms-transition: background 2s ease-in-out;
+	-o-transition: background 2s ease-in-out;
+	transition: background 2s ease-in-out;	
+}
